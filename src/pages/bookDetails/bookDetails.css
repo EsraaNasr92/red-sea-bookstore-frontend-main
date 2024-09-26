@@ -1,0 +1,903 @@
+/* bookDetails.css */
+
+/* Overall layout styles */
+.book-details {
+  display: flex;
+  align-items: flex-start !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
+}
+.digital-link{
+  text-decoration: none !important; /* Remove any lingering underline */
+  color: inherit !important;  
+}
+.cancelButton{
+  background-color: #B08E32 !important;
+  color: white !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+/* .page-container.wider{
+  width: 74%;
+} */
+
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #e9ecef;
+  width: 390px;
+  transition: width 0.3s ease;
+  position: sticky !important;
+  right: 0;
+  top: 0px;
+  height: 100%; /* Adjust height to cover the entire screen */
+  box-sizing: border-box; /* Ensure padding is included in the height */
+  z-index: 100;
+}
+/* Add to your existing CSS or create a new CSS file */
+
+.book-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+}
+
+.sidebar-content{
+  margin-top: 60px;
+}
+
+
+
+.sidebar {
+  /* Sidebar content styles */
+  display: block;
+  position: sticky;
+}
+
+.sidebar.collapsed {
+  /* Collapsed sidebar styles */
+  display: none;
+}
+
+.sidebar-mobile {
+  /* Sidebar content styles */
+  display: none;
+}
+
+.sidebar-mobile.collapsed {
+  /* Collapsed sidebar styles */
+  display: none;
+}
+
+.audio-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1000; /* Set higher than the overlay to appear on top */
+}
+
+.seek-bar {
+  width: 100%; /* Adjust the width as needed */
+  height: 8px;
+  border-radius: 4px;
+  background-color: #ddd; /* Background color */
+  outline: none; /* Remove default outline */
+}
+
+/* Style for the timer */
+.seek-time {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #888; /* Timer text color */
+}
+
+.book-actions .sidebar-toggle {
+  /* Button styles */
+  background-color: white;
+  border: 1px solid #B08E32 !important;
+  color: gray;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+  width: 200px;
+  margin-right: 5px;
+  font-family: lato, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.book-icon{
+  color: gray;
+  margin-left: 5px;
+}
+
+.book-actions .action-button-download{
+  background-color: #B08E32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;
+  width: 200px;
+  margin-right: 5px;
+  font-family: lato, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+/* Styles for the icons */
+.sidebar-toggle svg {
+  margin-right: 5px; /* Adjust margin between icon and text */
+  vertical-align: middle;
+}
+
+.book-info-side{
+  display: flex;
+}
+
+.book-thumbnail-side{
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+/* Sidebar styles */
+.sidebar h3 {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 600px;
+  height: 100%;
+  overflow-y: scroll; 
+}
+
+/* Modify the width and color of the scrollbar */
+.sidebar ul::-webkit-scrollbar {
+  width: 10px; /* Adjust scrollbar width */
+}
+
+/* Track - the area around the thumb */
+.sidebar ul::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+/* Thumb - the draggable handle */
+.sidebar ul::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* On hover, make the thumb darker */
+.sidebar ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.1em;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.sidebar-toggle-mobile{
+  display: none;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff; /* Change the color on hover */
+}
+
+/* Main content styles */
+.book-thumbnail {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.page {
+  margin-bottom: 40px;
+}
+
+.rhap_container {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #2f48584f;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+  line-height: 1;
+  padding: 20px 20px;
+  width: 100%;
+  border-radius: 5px;
+ margin-bottom: 19px;
+}
+.rhap_container:focus:not(:focus-visible) {
+  outline: 0;
+}
+.rhap_container svg {
+  vertical-align: initial;
+}
+.rhap_progress-filled{
+  color: #2F4858 !important;
+  background-color: #2F4858 !important;
+}
+
+.rhap_progress-indicator{
+  color: #2F4858 !important;
+  background-color: #2F4858 !important;
+}
+
+.rhap_play-pause-button{
+  color: #2F4858 !important; 
+}
+
+.rhap_header {
+  margin-bottom: 10px;
+}
+
+.rhap_footer {
+  margin-top: 5px;
+}
+
+.rhap_main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.rhap_stacked .rhap_controls-section {
+  margin-top: 8px;
+}
+
+.rhap_horizontal {
+  flex-direction: row;
+}
+.rhap_horizontal .rhap_controls-section {
+  margin-left: 8px;
+}
+
+.rhap_horizontal-reverse {
+  flex-direction: row-reverse;
+}
+.rhap_horizontal-reverse .rhap_controls-section {
+  margin-right: 8px;
+}
+
+.rhap_stacked-reverse {
+  flex-direction: column-reverse;
+}
+.rhap_stacked-reverse .rhap_controls-section {
+  margin-bottom: 8px;
+}
+
+.rhap_progress-section {
+  display: flex;
+  flex: 3 1 auto;
+  align-items: center;
+}
+
+.rhap_progress-container {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  flex: 1 0 auto;
+  align-self: center;
+  margin: 0 calc(10px + 1%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.rhap_progress-container:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.rhap_time {
+  color: #333;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.rhap_progress-bar {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #dddddd;
+  border-radius: 2px;
+}
+
+.rhap_progress-filled {
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: #868686;
+  border-radius: 2px;
+}
+
+.rhap_progress-bar-show-download {
+  background-color: rgba(221, 221, 221, 0.5);
+}
+
+.rhap_download-progress {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #dddddd;
+  border-radius: 2px;
+}
+
+.rhap_progress-indicator {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  top: -8px;
+  background: #868686;
+  border-radius: 50px;
+  box-shadow: rgba(134, 134, 134, 0.5) 0 0 5px;
+}
+
+.rhap_controls-section {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rhap_additional-controls {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+}
+
+.rhap_repeat-button {
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: #868686;
+  margin-right: 6px;
+}
+
+.rhap_main-controls {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rhap_main-controls-button {
+  margin: 0 3px;
+  color: #868686;
+  font-size: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+.rhap_play-pause-button {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.rhap_volume-controls {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rhap_volume-button {
+  flex: 0 0 26px;
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: #868686;
+  margin-right: 6px;
+}
+
+.rhap_volume-container {
+  display: flex;
+  align-items: center;
+  flex: 0 1 100px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.rhap_volume-bar-area {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+}
+.rhap_volume-bar-area:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.rhap_volume-bar {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: #dddddd;
+  border-radius: 2px;
+}
+
+.rhap_volume-indicator {
+  box-sizing: border-box;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  left: 0;
+  top: -4px;
+  background: #868686;
+  opacity: 0.9;
+  border-radius: 50px;
+  box-shadow: rgba(134, 134, 134, 0.5) 0 0 3px;
+  cursor: pointer;
+}
+.rhap_volume-indicator:hover {
+  opacity: 0.9;
+}
+
+.rhap_volume-filled {
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: #868686;
+  border-radius: 2px;
+}
+
+/* Utils */
+.rhap_button-clear {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.rhap_button-clear:hover {
+  opacity: 0.9;
+  transition-duration: 0.2s;
+}
+.rhap_button-clear:active {
+  opacity: 0.95;
+}
+.rhap_button-clear:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+
+.audio-file-title{
+    display: flex;
+    align-items: center; /* Align items vertically in center */
+    gap: 5px; /* Adjust the gap between the icon and text as needed */
+}
+
+/* Additional styling for page elements if needed */
+/* Add to your existing CSS or create a new CSS file */
+
+/* Flex layout for book information and actions */
+
+.main-content {
+  flex: 1;
+  padding: 0px 30px;
+}
+.book-meta-grid.wider{
+  position: relative;
+  left: 70px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.book-title-header{
+  text-align: left;
+  margin-bottom: 20px;
+  color: #2F4858;
+  /* position: absolute;
+  left: 250px; */
+}
+.book-expiry{
+  text-align: left;
+  margin-bottom: 20px;
+  color: #2F4858;
+  /* position: absolute;
+  left: 252px;
+  top: 100px; */
+}
+.book-description{
+  text-align: left;
+  margin-bottom: 20px;
+  color: #2F4858;
+  /* position: absolute;
+  left: 232px;
+  top: 120px; */
+  width: 50%;
+}
+
+.book-actions {
+  display: flex;
+  align-items: center;
+}
+.book-actions-filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.media-type-label{
+  margin-right: 10px;
+}
+
+.show-more{
+  color: #B08E32;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.book-meta-info{
+  text-align: left;
+  /* position: absolute;
+  top: 370px;
+  left: 251px; */
+}
+
+
+.floating-index-bar{
+  display: none;
+}
+.sidebar-toggle-mobile{
+  display: none;
+}
+
+
+.book-naivgation {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 30px; /* Adjust the distance from the right as needed */
+  z-index: 999; /* Set a higher z-index to make it appear on top of other content */
+}
+
+/* Style for the back-to-top and go-down buttons */
+.back-to-top,
+.go-down {
+  padding: 5px; /* Adjust padding as needed */
+  margin-bottom: 10px; /* Add space between buttons */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Additional styling for the icon */
+.back-to-top svg,
+.go-down svg {
+  width: 24px; /* Adjust icon size */
+  height: 24px;
+  fill: #B08E32;
+}
+
+.show-book-index-mobile,
+.download-book {
+  display: block;
+  color: #B08E32;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 25px;
+  font-family: lato, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.index-hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.book-actions-filter .media-type-selector{
+  margin-top: 10px !important;
+  width: 300px !important;
+}
+
+.book-photo-grid{
+  margin-top: 20px !important;
+}
+
+.dialogContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-file{
+  width: 50%;
+  height: 50%;
+}
+
+.MuiDialog-paperWidthSm{
+  max-width: 100vw !important;
+
+}
+.MuiDialog-container{
+  width: 100vw;
+}
+.parentDialog .MuiDialog-scrollPaper{
+  display: block !important;
+}
+.pdfContainer {
+  width: 100%;
+  height: 700px;
+  
+}
+
+.cancelButton {
+  margin-top: 20px;
+}
+
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+    /* Change to a column layout for smaller screens */
+  }
+
+  .book-actions .sidebar-toggle {
+    display: none;
+    /* Display the sidebar toggle button on smaller screens */
+  }
+
+  /* Styles for the floating index bar */
+  .floating-index-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    /* Add more styles as needed */
+  }
+
+  /* Style for the list items within the floating index bar */
+  .floating-index-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .floating-index-bar ul li {
+    margin-bottom: 5px;
+  }
+
+  .floating-index-bar ul li a {
+    color: #333;
+    text-decoration: none;
+    /* Additional link styles */
+  }
+
+  .sidebar-toggle-mobile {
+    display: block;
+    background-color: white;
+    border: 1px solid #B08E32 !important;
+    color: gray;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 25px;
+    margin-right: 5px;
+    font-family: lato, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .floating-index-bar.collapsed {
+    /* Collapsed sidebar styles */
+    display: none;
+  }
+
+  .book-info-mobile img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    /* Adjust margin as needed */
+  }
+
+  .book-info-mobile h4 {
+    margin: 0;
+  }
+
+  .book-exit-icon {
+    top: 0;
+    position: absolute;
+    right: 40px;
+  }
+
+  .close-icon {
+    cursor: pointer;
+  }
+
+  .close-icon {
+    cursor: pointer;
+    margin-bottom: 10px;
+    /* Adjust margin as needed */
+  }
+
+  .book-title-mobile {
+    margin: 0;
+    margin-bottom: 10px;
+    /* Adjust margin as needed */
+    /* Additional styles for the book title */
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    margin-bottom: 5px;
+    /* Adjust margin as needed */
+  }
+
+  ul li a {
+    color: #333;
+    text-decoration: none;
+    /* Additional link styles */
+  }
+
+  .book-info-mobile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+
+  .show-book-index-mobile {
+    display: block;
+    color: #B08E32;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 25px;
+    font-family: lato, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .book-title-header{
+    text-align: left;
+    margin-bottom: 20px;
+    color: #2F4858;
+    position: relative;
+    left: 0px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+  }
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-description{
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #2F4858;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    
+  }
+  .book-actions .action-button-download{
+    background-color: #B08E32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+    margin-right: 5px;
+    font-family: lato, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+  }
+  .digital-link{
+    text-decoration: none; /* Remove any lingering underline */
+    color: inherit;  
+  }
+  .page-container.wider{
+    width: 100%;
+  }
+  .book-meta-grid.wider{
+    position: relative;
+    left: 0px;
+  }
+  .book-actions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .book-actions-filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .book-photo-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center
+  }
+  .book-actions-filter .media-type-selector{
+    margin-top: 10px !important;
+    width: 287px !important;
+  }
+  .media-type-label{
+    margin: 0px !important;
+  }
+}

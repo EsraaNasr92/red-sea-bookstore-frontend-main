@@ -1,0 +1,99 @@
+/* login.css */
+
+/* Styles for the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0; /* Background color for the entire page */
+}
+
+.logo-container {
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+.signup-logo {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for the login form */
+.login-form {
+  background-color: #ffffff; /* Background color for the form */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Header styles */
+.login-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333333; /* Title color */
+}
+
+/* Paragraph styles */
+.login-intro {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666666; /* Text color */
+}
+
+/* Input field styles */
+.login-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #B08E32; /* Button background color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #B08E32; /* Button hover background color */
+}
+
+/* Error message styles */
+.error {
+  color: #ff0000 !important; /* Error message color */
+  margin-top: 10px;
+}
+
+/* Message styles */
+.message {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.message a {
+  color: #B08E32; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    width: auto;
+  }
+  
+}

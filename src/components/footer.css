@@ -1,0 +1,52 @@
+.app-footer{
+    background-color: white !important;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    border-top: 1px solid #ddd;
+}
+
+.footer-text{
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    margin: 0;
+    padding: 0;
+    color: #999999;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: inter !important;
+    line-height: 16.94px;
+    letter-spacing: 0.0075em;
+}
+
+.app-footer.visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
+    display: flex;
+    position: relative;
+  }
+
+.app-footer.hidden {
+    display: none;
+  }
+
+  .cubeish-url{
+    color: #2F4858;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .app-footer{
+        padding: 10px 0;
+        margin-bottom: 77px;
+        position: relative !important;
+    }
+  }

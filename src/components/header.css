@@ -1,0 +1,130 @@
+.app-header-box {
+  background-color: var(--header-color) !important;
+  width: 100% !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #ccc !important;
+}
+.login-signup{
+  color: var(--main-color);
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 17px;
+}
+.language-button {
+  text-transform: none; /* Prevent uppercase transformation */
+  color: #BDA05C !important;
+}
+
+.language-menu {
+  width: 150px; /* Set the width of the menu */
+  border-radius: 8px; /* Add border radius */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.language-menu-item {
+  padding: 8px 16px; /* Add padding */
+  font-size: 14px; /* Set the font size */
+}
+
+.language-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.04); /* Add a light background color on hover */
+}
+.signup-button{
+  background-color: var(--primary-button-color) !important;
+  color: #fff !important;
+  width: 100px;
+  font-weight: 300 !important;
+}
+.lang-text{
+  color: #BDA05C;
+  font-weight: 300;
+  margin-right: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  display: flex;
+}
+.lang-text-mobile{
+  color: #B08E32;
+  font-size: 17px;
+  font-weight: 300;
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  margin-right: 45px;
+}
+.login-signup-mobile{
+  color: black;
+  text-decoration: none;
+}
+.login-box{
+  display: flex;
+  justify-content: end;
+  align-items: center !important;
+}
+.css-1lvtzne{
+  justify-content: end;
+}
+.avatar-box{
+  position: absolute;
+  right: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.lang-div{
+  position: absolute;
+  right: 300px;
+}
+.lang-box{
+  display: none;
+}
+.myLibraryLink {
+  text-decoration: none;
+  color: white;
+  background-color: #BDA05C;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 10px 10px 10px 10px;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.myLibraryLink:hover {
+  background-color: #8b6f24;
+}
+
+.my-profile-link{
+  text-decoration: none;
+  color: black;
+  text-align: left;
+}
+.logo{
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .login-signup{
+    display: none;
+  }
+  .myLibraryLink{
+    display: none;
+  }
+  .lang-box{
+    display: block;
+    position: absolute;
+    right: 2px;
+  }
+  .non-loggedin-box{
+    display: none !important;
+  }
+  .logo{
+    margin-left: 0px;
+  }
+  
+}

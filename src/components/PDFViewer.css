@@ -1,0 +1,126 @@
+.pdf-container {
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the PDF pages */
+  .react-pdf__Page {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  /* Style for the PDF text layer */
+  .react-pdf__TextLayer {
+    font-family: Arial, sans-serif;
+  }
+  .react-pdf__Page__textContent.textLayer{
+    display: none;
+  }
+  .react-pdf__Page__annotations.annotationLayer{
+    display: none;
+  }
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.prev-button, .next-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+  
+  /* Custom styles for other elements */
+  .pdf-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  
+  .pdf-pages {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .pdf-single-page {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pdf-double-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 1px; /* Add space between the two pages */
+    width: 90%;
+  }
+  
+  
+  .pdf-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+  }
+  
+  .prev-button, .next-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px; /* Adjust the size of the arrows */
+    cursor: pointer;
+    color: #333; /* Change the color as needed */
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .prev-button:disabled, .next-button:disabled {
+    color: #ccc; /* Disabled state color */
+    cursor: not-allowed;
+  }
+  
+  .prev-button:hover, .next-button:hover {
+    color: #000; /* Hover state color */
+  }
+  
+  .page-info {
+    position: absolute;
+    top: 0px; /* Adjust this value to control how close it is to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #333; /* Adjust the color as needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background for better visibility */
+    padding: 5px 10px; /* Optional: Add some padding */
+    border-radius: 4px; /* Optional: Rounded corners */
+    height: 30px;
+  }
+
+  .page-number-input {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    width: 40px; /* Adjust the width as needed */
+    text-align: center;
+  }
+  
+  .page-number-input::-webkit-outer-spin-button,
+  .page-number-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+  

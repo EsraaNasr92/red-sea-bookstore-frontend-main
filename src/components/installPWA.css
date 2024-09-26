@@ -1,0 +1,29 @@
+.pwa-text{
+    color: black;
+    font-family: inter !important;
+}
+.pwa-cancel{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #B08E32 !important;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-family: inter !important;
+}
+.pwa-accept{
+    padding: 10px 20px;
+    background-color: #B08E32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+  

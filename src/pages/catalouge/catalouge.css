@@ -1,0 +1,295 @@
+/* Assuming you have a common styling for Header, Footer, and container */
+body {
+    margin: 0;
+    font-family: inter !important;
+  }
+  
+  /* Header styling */
+    /* header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    } */
+
+  .get-book-button{
+    background-color: var(--seconday-button-color) !important;
+    color: var(--main-color) !important;
+    border: 2px solid var(--main-color) !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: background-color 0.3s ease !important;
+    margin-bottom: 10px !important;
+    padding: 10px 20px !important;
+    width: 200px;
+  }
+
+  /* .get-book-button-disabled{
+    background-color: #B08E32 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: background-color 0.3s ease !important;
+    margin-bottom: 10px !important;
+  } */
+  
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Main container styling */
+  .catalouge-container {
+    margin: 20px;
+  }
+  
+  /* Book card styling */
+  .book-card {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .book-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .book-grid {
+    position: relative;
+    display: flex;
+  } 
+  
+  .book-card {
+    position: relative;
+    overflow: hidden;
+  } 
+  
+  .book-description-overlay {
+    bottom: 0;
+    width: 100%;/* Adjust the transparency as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff; /* Text color for the description */
+    /* position: absolute;
+    left: 205px;
+    top: 0px; */
+  }
+  .book-actions-overlay{
+    bottom: 0;
+    width: 100%;/* Adjust the transparency as needed */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: #fff; /* Text color for the description */
+    /* position: absolute;
+    left: 0px;
+    top: 0px; */
+  }
+  
+  .book-description-catalouge {
+    text-align: left;
+    margin-bottom: 20px !important;
+    color: #2F4858;
+    width: 80%;
+    font-size: 14px !important;
+  }
+  .read-more-catalogue{
+    color: #B08E32;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  .book-language,
+  .book-year{
+    font-family: inter !important ;
+    font-size: 13px !important;
+    color: var(--main-color);
+    font-weight: 600;
+  }
+  
+    .book-language-span,
+    .book-year-span{
+        font-family: inter !important ;
+        font-size: 13px !important;
+        color: black;
+        font-weight: 400;
+    }
+
+  
+  .book-card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .book-main-grid-catalouge{
+    padding: 18px !important;
+  }
+  .add-book-link-catalouge{
+    text-decoration: none;
+    color: var(--main-color) !important;
+    font-weight: 600;
+  }
+  
+  .search-input-catalouge{
+    width: 30%; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .book-title{
+    font-size: 22px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .user-catalouge-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start !important;
+    height: 100% !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .search-actions{
+    display: flex;
+    align-items: baseline !important;
+    justify-content: flex-start !important;
+  }
+  .search-actions .search-input-catalouge{
+    width: 15% ;
+  }
+  .search-actions .media-type-selector{
+    width: 15% ;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .search-icon{
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .search-button-catalouge{
+    display: none;
+  }
+
+  .books-grid{
+    margin: 0 auto;
+    width: 80% !important;
+    padding: 40px;
+  }
+  .search-icon-mobile{
+    display: none;
+  }
+  .action-button-download-catalouge{
+    background-color: #B08E32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 40px;
+    width: 200px;
+    margin-right: 5px;
+    font-family: lato, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .loading-spinner-container-catolouge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .search-input-catalouge{
+      width: 100%;
+      padding-top: 10px !important;
+      padding-left: 0px !important;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      margin: 0px !important;
+      margin-top: 10px !important;
+    }
+    .book-description-catalouge{
+        margin: 0px !important;
+    }
+    .search-actions{
+      display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    }
+    .search-actions .search-input-catalouge{
+      width: 98% ;
+      text-align: left;
+      padding-left: 10px !important;
+    }
+    .search-actions .media-type-selector{
+      width: 104% ;
+      text-align: left;
+      margin-left: 0px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .search-icon{
+      display: none !important;
+    }
+    .search-button-catalouge{
+      background-color: var(--seconday-button-color) !important;
+      color: var(--main-color) !important;
+      border: 2px solid var(--main-color) !important;
+      border-radius: 5px !important;
+      cursor: pointer !important;
+      transition: background-color 0.3s ease !important;
+      width: 100px;
+      display: flex;
+      margin-top: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+    .book-grid{
+      display: block;
+      margin-bottom: 0px !important;
+    }
+    .book-card{
+      padding-top: 60% !important;
+    }
+    .book-actions-overlay{
+      justify-content: center;
+    }
+    .book-button-catolouge{
+      width: 100%;
+    }
+    .get-book-button{
+      width: 100%;
+    }
+    .action-button-download-catalouge{
+      width: 100%;
+    }
+  }

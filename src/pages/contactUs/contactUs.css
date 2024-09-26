@@ -1,0 +1,61 @@
+.contact-us-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 35px;
+    font-family: inter !important;
+    margin-bottom: 50px;
+  }
+  .contact-us-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start !important;
+    height: 100% !important;
+    position: relative;
+    z-index: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inter !important;
+  }
+  
+   .contact-submit{
+    background-color: #B08E32 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: background-color 0.3s ease !important;
+    margin-bottom: 10px !important;
+    padding: 10px 20px !important;
+  }
+
+  .success-ticket{
+    color: green
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+  
+  

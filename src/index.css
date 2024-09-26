@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto !important;
+  font-family: Inter !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1600px !important;
+  background-color: var(--backgorund-color) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --main-color: #b08e32;
+  --secondary-color: #9ae5ff;
+  --backgorund-color: #fff;
+  --header-color: #fff;
+  --left-bar-color: #fff;
+  --hover-color: #9ae5ff;
+  --primary-button-color: #b08e32;
+  --seconday-button-color: #fff;
+  --font-size: 16px;
+}
